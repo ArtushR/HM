@@ -4,7 +4,7 @@ from django import forms
 from django.utils.translation import gettext_lazy as _
 User = get_user_model()
 
-a = 5
+
 class UserCreationForm(UserCreationForm):
     email = forms.EmailField(
         label=_("Email"),

@@ -1,18 +1,217 @@
-{% extends '../base.html' %}
-
-{% block content %}
+{% load static %}
     <h1>Login</h1>
     <hr>
 
-    {% if form.errors %}
-        <p>{{ form.errors.error }}</p>
-    {% endif %}
-    <form action="{% url 'login' %}" method="post">
-        {{form}}
-        {% csrf_token %}
-    <button type="submit" class="btn btn-success">submit</button>
-    </form>
 
-    <a href="{% url 'password_reset' %}">Forgot Password?</a>
 
-{% endblock %}
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v5.6.13, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.6.13, mobirise.com">
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image:src" content="">
+  <meta property="og:image" content="">
+  <meta name="twitter:title" content="Մուտք">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="{% static 'assets/images/logo-137x158.png' %}" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Մուտք</title>
+  <link rel="stylesheet" href="{% static 'assets/web/assets/mobirise-icons2/mobirise2.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-grid.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-reboot.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/parallax/jarallax.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/animatecss/animate.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/dropdown/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/socicon/css/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/theme/css/style.css' %}">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="{% static 'assets/mobirise/css/mbr-additional.css' %}"><link rel="stylesheet" href="{% static 'assets/mobirise/css/mbr-additional.css' %}" type="text/css">
+  
+  
+  
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu cid-s48OLK6784" once="menu" id="menu1-n">
+    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="{% url 'home' %}">
+                        <img src="{% static 'assets/images/logo-137x158.png' %}" alt="HandMade with Love" style="height: 3.8rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="https://mobiri.se">HAND<br>MADE</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-info display-4" href="https://mobirise.com">Մուտք</a></li>
+                    <li class="nav-item"><a class="nav-link link text-info display-4" href="https://mobirise.com">Գրանցվել</a></li></ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+
+</section>
+
+<section data-bs-version="5.1" class="form2 cid-ti98mqKYKc" id="form2-q">
+
+    
+
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 mx-auto mbr-form">
+
+
+                <form action="{% url 'login' %}" method="post">
+                    {% csrf_token %}
+                    <div class="row">
+                        
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            Ինչ որ բան սխալ գնաց․․․
+                        </div>
+                        <div>{% if form.errors %}
+                    <ul><li><p>{{ form.errors.error }}</p></li></ul>
+                {% endif %}
+                        </div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <h1 class="mbr-section-title mb-4 align-center mbr-fonts-style display-2"><strong>Անձնական էջի մուտք</strong></h1>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <p class="mbr-text mbr-fonts-style mb-5 align-center display-7">լրացրեք մուտքի տվյալները</p>
+                        </div>
+                        <div class="col-lg col-md col-12 form-group mb-3" data-for="username">
+                            <label for="name-form2-q"></label><input type="text" name="username" placeholder="Մուտքանուն" data-form-field="username" class="form-control" id="name-form2-q">
+                        </div>
+                        <div class="col-lg col-md col-12 form-group mb-3" data-for="pass">
+                            <input type="password" name="password" placeholder="Գաղտնաբառ" data-form-field="pass" class="form-control" id="email-form2-q">
+                        </div>
+                        <div class="mbr-section-btn col-md-auto col"><button type="submit" class="btn btn-warning display-4"><span class="mobi-mbri mobi-mbri-play mbr-iconfont mbr-iconfont-btn"></span>հաստատել</button></div>
+                    <a href="{% url 'password_reset' %}" align="right">Forgot Password?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="form1 cid-ti98nuHHua mbr-fullscreen mbr-parallax-background" id="form1-s">
+
+    
+
+    
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(255, 255, 255);"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+                <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="GVkJsjLs8TWssJSiAoAx2u1ih1yFCy2y2bk1Q1V7OjkA77RhsbpFD9DrrdFA8tkBj1oylO0a2GlsiW1x3KvuGWclO6iPkFDN4G8BrSqbRXxFNKY3Mzea1gIsAkHgTA9p">
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            Oops...! some problem!
+                        </div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-12">
+                            <h1 class="mbr-section-title mb-4 mbr-fonts-style align-center display-2">
+                                <strong>Get Latest Updates!</strong>
+                            </h1>
+                        </div>
+                        <div class="col-12">
+                            <p class="mbr-text mbr-fonts-style mb-5 align-center display-7">Start with creating a new website and picking up the theme. Then expand the blocks panel with the big red "plus" button in the lower right corner and start dragging the blocks you like.</p>
+                        </div>
+                        <div class="col-md col-12 form-group mb-3" data-for="name">
+                            <input type="text" name="name" placeholder="Name" data-form-field="Name" class="form-control" id="name-form1-s">
+                        </div>
+                        <div class="col-md col-12 form-group mb-3" data-for="email">
+                            <input type="email" name="email" placeholder="Email" data-form-field="Email" class="form-control" id="email-form1-s">
+                        </div>
+                        <div class="mbr-section-btn col-12 col-md-auto">
+                            <button type="submit" class="btn btn-primary display-4">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="footer3 cid-s48P1Icc8J" once="footers" id="footer3-o">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="row row-links">
+                <ul class="foot-menu">
+                    
+                    
+                    
+                    
+                    
+                <li class="foot-menu-item mbr-fonts-style display-7">Մեր մասին</li><li class="foot-menu-item mbr-fonts-style display-7">Համագործակցություն</li><li class="foot-menu-item mbr-fonts-style display-7">Բլոգ</li></ul>
+            </div>
+            <div class="row social-row">
+                <div class="social-list align-right pb-2">
+                    
+                    
+                    
+                    
+                    
+                    
+                <div class="soc-item">
+                        <a href="https://twitter.com/mobirise" target="_blank">
+                            <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
+                        </a>
+                    </div><div class="soc-item">
+                        <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
+                            <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+                        </a>
+                    </div><div class="soc-item">
+                        <a href="https://www.youtube.com/c/mobirise" target="_blank">
+                            <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
+                        </a>
+                    </div><div class="soc-item">
+                        <a href="https://instagram.com/mobirise" target="_blank">
+                            <span class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
+                        </a>
+                    </div></div>
+            </div>
+            <div class="row row-copirayt">
+                <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
+                    © Copyright 2022. All Rights Reserved.&nbsp;<br>Made by 4 Enthusiasts using Python and Django</p>
+            </div>
+        </div>
+    </div>
+</section>
+  <script src="{% static 'assets/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/smoothscroll/smooth-scroll.js' %}"></script>
+  <script src="{% static 'assets/ytplayer/index.js' %}"></script>
+  <script src="{% static 'assets/dropdown/js/navbar-dropdown.js' %}"></script>
+  <script src="{% static 'assets/embla/embla.min.js' %}"></script>
+  <script src="{% static 'assets/embla/script.js' %}"></script>
+  <input name="animation" type="hidden">
+  </body>
+</html>

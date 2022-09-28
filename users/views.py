@@ -7,7 +7,7 @@ from django.conf import settings
 
 
 class Register(View):
-    template_name = 'registration/register.html'
+    template_name = 'reg.html'
 
     def get(self, request):
         context = {

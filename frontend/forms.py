@@ -1,8 +1,8 @@
 from django import forms
-from .models import *
+from .models import Product
 
 
-class HotelForm(forms.ModelForm):
+class ProductForm(forms.ModelForm):
     class Meta:
-        model = Hotel
-        fields = ['productname', 'price', 'description', 'image']
+        model = Product
+        fields = "__all__"

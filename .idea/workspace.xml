@@ -4,7 +4,6 @@
     <list default="true" id="e798c68d-03f0-4339-bb57-086d20a348c9" name="Changes" comment="jhbvj">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/static/assets/images/background2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/assets/images/background2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/registration/login.html" afterDir="false" />
     </list>
@@ -107,7 +106,7 @@
       <workItem from="1663828028144" duration="738000" />
       <workItem from="1663944950764" duration="4295000" />
       <workItem from="1664207131250" duration="10262000" />
-      <workItem from="1664304319482" duration="12938000" />
+      <workItem from="1664304319482" duration="14053000" />
     </task>
     <task id="LOCAL-00001" summary="jhbvj">
       <created>1663949111845</created>
@@ -137,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664343416482</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="jhbvj">
+      <created>1664360471232</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664360471232</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

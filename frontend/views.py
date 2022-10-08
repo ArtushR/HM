@@ -1,7 +1,7 @@
 from django.db.models import Q
 from django.shortcuts import render
-from django.views.generic import ListView
-
+from django.utils import timezone
+from django.views.generic import ListView, DetailView
 from .models import *
 from users.views import *
 
@@ -38,3 +38,12 @@ class SearchResultsView(ListView):
             Q(productname__icontains=query) | Q(description__icontains=query)
         )
         return object_list
+
+class ProductDetailView(DetailView):
+    model = Product
+    template_name = "product_detail.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['now'] = timezone.now()
+        return context

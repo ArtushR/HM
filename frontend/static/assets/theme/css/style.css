@@ -229,7 +229,7 @@ figure[mbr-media-size] {
 img,
 iframe {
   display: block;
-  width: 50%px;
+  width: 100%;
 }
 
 .card {

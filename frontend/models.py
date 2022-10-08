@@ -8,6 +8,7 @@ class Product(models.Model):
     productname = models.CharField(max_length=200)
     price = models.IntegerField()
     description = models.TextField()
+    short = models.TextField(max_length= 50)
     image = models.ImageField(upload_to='images/')
     author = models.ForeignKey(User,
                                null=True,
